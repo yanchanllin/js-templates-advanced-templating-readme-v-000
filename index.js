@@ -9,7 +9,6 @@ Handlebars.registerHelper('comment_body', function() {
 
 function loadIssues() {
   var template = Handlebars.compile(document.getElementById("issue-template").innerHTML);
-  debugger 
   var result = template(issues);
   document.getElementsByTagName("main")[0].innerHTML += result;
 }
